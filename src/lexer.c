@@ -1,8 +1,10 @@
 #include "lexer.h"
+
 #include <ctype.h>
+#include <stdlib.h>
 #include <string.h>
 
-Lexer* lexer_init(const char *input) {
+Lexer *lexer_init(const char *input) {
     Lexer *lexer = malloc(sizeof(Lexer));
     lexer->input = input;
     lexer->pos = 0;
@@ -86,6 +88,4 @@ Token lexer_next_token(Lexer *lexer) {
     return token;
 }
 
-void lexer_free(Lexer *lexer) {
-    free(lexer);
-}
+void lexer_free(Lexer *lexer) { free(lexer); }

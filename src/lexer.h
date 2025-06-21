@@ -14,7 +14,7 @@ typedef enum {
 
 typedef struct {
     TokenType type;
-    char value[32]; // Для хранения числа, имени функции и т.д.
+    char value[32];  // Для хранения числа, имени функции и т.д.
 } Token;
 
 typedef struct {
@@ -22,7 +22,7 @@ typedef struct {
     int pos;
 } Lexer;
 
-Lexer* lexer_init(const char *input);
+Lexer *lexer_init(const char *input);
 Token lexer_next_token(Lexer *lexer);
 void lexer_free(Lexer *lexer);
 
