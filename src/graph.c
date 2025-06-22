@@ -9,7 +9,7 @@ int main() {
         expression[strcspn(expression, "\n")] = '\0';
         plot_function(expression);
     } else {
-        printf("n/a\n");
+        printf("n/a");
     }
     return 0;
 }

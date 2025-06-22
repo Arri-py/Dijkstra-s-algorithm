@@ -14,7 +14,7 @@ typedef enum {
 
 typedef struct {
     TokenType type;
-    char value[32];  // Для хранения числа, имени функции и т.д.
+    char value[32];
 } Token;
 
 typedef struct {
